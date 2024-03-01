@@ -3,8 +3,14 @@ const Dotenv = require('dotenv-webpack');
 
 module.exports = {
     entry : {
-      index : './src/webpack-render/index.js',
-   
+      home : './src/webpack-render/home.js',
+      dashboard : './src/webpack-render/dashboard.js',
+      deleteaccount : './src/webpack-render/deleteaccount.js',
+      docs : './src/webpack-render/docs.js',
+      login : './src/webpack-render/login.js',
+      register : './src/webpack-render/register.js',
+      settings : './src/webpack-render/settings.js',
+
     },
     output: {
       filename:'[name].js',
