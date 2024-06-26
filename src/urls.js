@@ -1,1 +1,0 @@
-export const rootUrl = "https://emailist.com/api/";
