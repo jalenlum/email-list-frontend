@@ -1,5 +1,4 @@
 import * as React from "react";
-import ExampleComponent from "../components/ExampleComponent";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { createRoot } from "react-dom/client";
