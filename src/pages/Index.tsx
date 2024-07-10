@@ -15,7 +15,7 @@ const Index = () => {
         <div
           className="row justify-content-center pt-5"
           data-aos="fade-up"
-          data-aos-duration="2500"
+          data-aos-duration="2000"
         >
           <div className="col-5 text-center pt-5 fw-bold">
             Streamline your email management with Email List API, an all-in-one
@@ -25,24 +25,25 @@ const Index = () => {
         </div>
         <div className="row justify-content-center mt-4">
           <div className="col-5 text-center">
-            <button
+            <a
               className="btn btn-success border mx-1 fw-bold shadow"
               data-aos="fade-up"
-              data-aos-delay="1600"
-              data-aos-duration="1500"
+              data-aos-delay="1300"
+              data-aos-duration="1200"
               style={{ fontSize: 14, width: 160 }}
             >
               Get Started
-            </button>
-            <button
+            </a>
+            <a
               className="btn btn-light border mx-1 fw-bold shadow"
+              href="../../project/docs.html"
               data-aos="fade-up"
-              data-aos-delay="1650"
-              data-aos-duration="1500"
+              data-aos-delay="1350"
+              data-aos-duration="1200"
               style={{ fontSize: 14, width: 160 }}
             >
               <i className="bi bi-book"></i> Documentation
-            </button>
+            </a>
           </div>
         </div>
       </div>
