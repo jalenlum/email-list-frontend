@@ -12,30 +12,6 @@ const Footer = () => {
           className="d-flex justify-content-between p-4"
           style={{ backgroundColor: "#6351ce" }}
         >
-          <div className="me-5">
-            <span>Get connected with us on social networks:</span>
-          </div>
-
-          <div>
-            <a href="" className="text-white me-4">
-              <i className="fab fa-facebook-f"></i>
-            </a>
-            <a href="" className="text-white me-4">
-              <i className="fab fa-twitter"></i>
-            </a>
-            <a href="" className="text-white me-4">
-              <i className="fab fa-google"></i>
-            </a>
-            <a href="" className="text-white me-4">
-              <i className="fab fa-instagram"></i>
-            </a>
-            <a href="" className="text-white me-4">
-              <i className="fab fa-linkedin"></i>
-            </a>
-            <a href="" className="text-white me-4">
-              <i className="fab fa-github"></i>
-            </a>
-          </div>
         </section>
 
         <section className="">

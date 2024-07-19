@@ -23,7 +23,7 @@ const Navbar = () => {
         style={{ fontFamily: "Arimo", fontSize: 14, fontWeight: 700 }}
       >
         <div className="container">
-          <a className="navbar-brand fw-bold" href="../../project/index.html" style={{ fontSize: 18 }}>
+          <a className="navbar-brand fw-bold" href="./index.html" style={{ fontSize: 18 }}>
             Email List
           </a>
           <button
@@ -40,12 +40,12 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto align-items-center">
               <li className="nav-item">
-                <a className="nav-link mx-2" href="../../project/index.html">
+                <a className="nav-link mx-2" href="./index.html">
                   Home
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link mx-2" href="../../project/docs.html">
+                <a className="nav-link mx-2" href="./docs.html">
                   Docs
                 </a>
               </li>

@@ -36,7 +36,7 @@ const Index = () => {
             </a>
             <a
               className="btn btn-light border mx-1 fw-bold shadow"
-              href="../../project/docs.html"
+              href="./docs.html"
               data-aos="fade-up"
               data-aos-delay="1350"
               data-aos-duration="1200"
