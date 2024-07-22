@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useState } from 'react';
+import { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { createRoot } from "react-dom/client";
@@ -71,56 +71,66 @@ const SignUp: React.FC = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
-        <label htmlFor="username">Username:</label>
-        <input
-          type="text"
-          id="username"
-          name="username"
-          value={formData.username}
-          onChange={handleChange}
-          required
-        />
+    <>
+      <Navbar />
+
+      <div
+        className="container text-left min-vh-100"
+        style={{ fontFamily: "Arimo" }}
+      >
+        <form onSubmit={handleSubmit} className="mt-5">
+          <div>
+            <label htmlFor="username">Username:</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              value={formData.username}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div>
+            <label htmlFor="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div>
+            <label htmlFor="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              value={formData.password}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div>
+            <label htmlFor="confirmPassword">Retype Password:</label>
+            <input
+              type="password"
+              id="confirmPassword"
+              name="confirmPassword"
+              value={formData.confirmPassword}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <button type="submit" disabled={isSubmitting}>
+            Sign Up
+          </button>
+          {error && <p style={{ color: "red" }}>{error}</p>}
+        </form>
       </div>
-      <div>
-        <label htmlFor="email">Email:</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
-      </div>
-      <div>
-        <label htmlFor="password">Password:</label>
-        <input
-          type="password"
-          id="password"
-          name="password"
-          value={formData.password}
-          onChange={handleChange}
-          required
-        />
-      </div>
-      <div>
-        <label htmlFor="confirmPassword">Retype Password:</label>
-        <input
-          type="password"
-          id="confirmPassword"
-          name="confirmPassword"
-          value={formData.confirmPassword}
-          onChange={handleChange}
-          required
-        />
-      </div>
-      <button type="submit" disabled={isSubmitting}>
-        Sign Up
-      </button>
-      {error && <p style={{ color: "red" }}>{error}</p>}
-    </form>
+      <Footer />
+    </>
   );
 };
 
